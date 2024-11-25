@@ -42,34 +42,36 @@ const Contact = () => {
     };
 
     return (
-        <div className="contact-container">
-            <h1>Contacto</h1>
-            <form onSubmit={handleSubmit} className="contact-form">
-                <div className="form-group">
-                    <label htmlFor="name">Nombre:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Escribe tu nombre"
-                    />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="message">Mensaje:</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="Escribe tu mensaje"
-                    ></textarea>
-                </div>
-                <button type="submit" className="submit-button">Enviar</button>
-            </form>
-            <ToastContainer />
-        </div>
+        <main className='container-contacto'>
+            <div className="contact-container">
+                <h1>Contacto</h1>
+                <form onSubmit={handleSubmit} className="contact-form">
+                    <div className="form-group">
+                        <label htmlFor="name">Nombre:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            placeholder="Escribe tu nombre"
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="message">Mensaje:</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            value={formData.message}
+                            onChange={handleChange}
+                            placeholder="Escribe tu mensaje"
+                        ></textarea>
+                    </div>
+                    <button type="submit" className="submit-button">Enviar</button>
+                </form>
+                <ToastContainer />
+            </div>
+        </main>
     );
 };
 

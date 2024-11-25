@@ -1,5 +1,5 @@
 nav {
-    background-color: #444;
+    background-color: #111;
     width: 100%;
     position: fixed;
     top: 0;
@@ -23,13 +23,18 @@ nav {
     align-items: center;
 }
 
+.logo img {
+    width: 200px;
+}
+
 .items {
-    padding: 20px;
     display: flex;
     gap: 12px;
 }
 
 .items a {
+    padding: 20px 2px;
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
 }

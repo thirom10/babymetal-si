@@ -25,7 +25,9 @@ const Navbar = () => {
   return (
     <nav className={showNav ? "nav-visible" : "nav-hidden"}>
         <div className='home-nav'>
-            <div className='logo'>Logo</div>
+            <div className='logo'>
+              <img src="./babymetallogo.png" alt="" />
+            </div>
             <div className='items'>
                 <a ><Link to="/">Inicio</Link></a>
                 <a ><Link to="">Albums</Link></a>

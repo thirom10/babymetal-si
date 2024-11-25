@@ -35,12 +35,10 @@ const Miembros = () => {
                             key={index}
                             className={`accordion-item ${activeTab === index ? "accordion-active" : ""}`}
                         >
-                            <h4 className="accordion-item__label">{member.nombre}</h4>
-                            <div className="accordion-item__container">
-                                <p><strong>Edad:</strong> {member.edad}</p>
-                                <p><strong>Nacionalidad:</strong> {member.nacionalidad}</p>
-                                <p><strong>Fecha de Nacimiento:</strong> {member.fecha_nacimiento}</p>
-                                <p><strong>Altura:</strong> {member.altura}</p>
+                            <div className='album-tabs'>
+                                <div>
+                                    <h4 className="accordion-item__label">{member.nombre}</h4>
+                                </div>
                                 <div className="albums">
                                     {member.albums.map((album, i) => (
                                         <button
@@ -52,16 +50,29 @@ const Miembros = () => {
                                         </button>
                                     ))}
                                 </div>
-                                {activeAlbum && (
-                                    <div className="album-content">
-                                        <h5>{activeAlbum.nombre}</h5>
-                                        <img
-                                            src={activeAlbum.imagen_album}
-                                            alt={activeAlbum.nombre}
-                                        />
-                                        <p>{activeAlbum.descripcion}</p>
+                            </div>
+                            <div className="accordion-item__container">
+                                <div className='acordion-info'>
+                                    <div>
+                                        <p><strong>Edad:</strong> {member.edad}</p>
+                                        <p><strong>Nacionalidad:</strong> {member.nacionalidad}</p>
+                                        <p><strong>Fecha de Nacimiento:</strong> {member.fecha_nacimiento}</p>
+                                        <p><strong>Altura:</strong> {member.altura}</p>
                                     </div>
-                                )}
+                                    <div>
+                                        {activeAlbum && (
+                                            <div className="album-content">
+                                                <h5>{activeAlbum.nombre}</h5>
+                                                <img
+                                                    src={activeAlbum.imagen_album}
+                                                    alt={activeAlbum.nombre}
+                                                />
+                                                <p>{activeAlbum.descripcion}</p>
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+
                             </div>
                         </article>
                     ))}

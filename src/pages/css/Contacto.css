@@ -1,5 +1,12 @@
+.container-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .contact-container {
-    max-width: 600px;
+    width: 40%;
     margin: 2rem auto;
     padding: 1rem;
     background: #222;
