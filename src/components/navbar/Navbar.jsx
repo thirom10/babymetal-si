@@ -31,7 +31,7 @@ const Navbar = () => {
                 <a ><Link to="">Albums</Link></a>
                 <a ><Link to="/Canciones">Canciones</Link></a>
                 <a ><Link to="/Miembros">Miembros</Link></a>
-                <a ><Link to="">Contacto</Link></a>
+                <a ><Link to="/Contacto">Contacto</Link></a>
             </div>
         </div>
     </nav>

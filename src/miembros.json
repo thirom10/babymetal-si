@@ -10,7 +10,7 @@
         "albums": [
             {
                 "nombre": "Babymetal",
-                "imagen_album": "https://www.shutterstock.com/editorial/image-editorial/N5TbAb01Nbz9Ua2cOTk0MA==/baby-metal---suzuka-nakamoto-%22su-metal%22-yui-440nw-5016926b.jpg",
+                "imagen_album": "https://pics.filmaffinity.com/218352699034261-nm_200.jpg",
                 "descripcion": "2014."
             },
             {
@@ -20,7 +20,7 @@
             },
             {
                 "nombre": "Metal Galaxy",
-                "imagen_album": "https://static.wikia.nocookie.net/babymetal/images/9/97/SU-METAL_Revolver_2023_%281%29.png/revision/latest/scale-to-width-down/250?cb=20240407182653",
+                "imagen_album": "./suzuka.webp",
                 "descripcion": "2019."
             },
             {
