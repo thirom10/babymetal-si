@@ -53,9 +53,34 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .info-inicio p {
+    font-size: 20px;
   }
 
   .info-inicio h2 {
+    font-size: 58px;
+  }
+
+  .btn-ver {
+    background-color: red;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
     color: #fff;
-    font-size: 48px;
+    font-size: 22px;
+    text-decoration: none;
+  }
+
+  .timeline-section {
+    padding: 40px 20px;
+    background-color: #202020;
+    color: #fff;
   }
