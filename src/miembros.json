@@ -1,0 +1,107 @@
+[
+    {
+        "nombre": "Suzuka Nakamoto",
+        "edad": "25",
+        "nacionalidad": "Japonesa",
+        "fecha_nacimiento": "1999-10-20",
+        "tiempo": "2010-2020",
+        "altura": "160 cm",
+        "imagen": "https://i.ytimg.com/vi/WIKqgE4BwAY/maxresdefault.jpg",
+        "albums": [
+            {
+                "nombre": "Babymetal",
+                "imagen_album": "https://www.shutterstock.com/editorial/image-editorial/N5TbAb01Nbz9Ua2cOTk0MA==/baby-metal---suzuka-nakamoto-%22su-metal%22-yui-440nw-5016926b.jpg",
+                "descripcion": "2014."
+            },
+            {
+                "nombre": "Metal Resistance",
+                "imagen_album": "https://pm1.aminoapps.com/7642/24f76552d4d30f29e5a76883341e9b8c7d024846r1-735-925v2_uhq.jpg",
+                "descripcion": "2016."
+            },
+            {
+                "nombre": "Metal Galaxy",
+                "imagen_album": "https://static.wikia.nocookie.net/babymetal/images/9/97/SU-METAL_Revolver_2023_%281%29.png/revision/latest/scale-to-width-down/250?cb=20240407182653",
+                "descripcion": "2019."
+            },
+            {
+                "nombre": "The Other One",
+                "imagen_album": "https://pbs.twimg.com/media/FHCdWsFaIAgyLi1.jpg",
+                "descripcion": "2023"
+            }
+        ]
+    },
+        {
+        "nombre": "Moami Kikuchi",
+        "edad": "24",
+        "nacionalidad": "Japonesa",
+        "fecha_nacimiento": "1999-07-04",
+        "tiempo": "2010-2020",
+        "altura": "158 cm",
+        "imagen": "url_imagen_moa.jpg",
+        "albums": [
+            {
+                "nombre": "Babymetal",
+                "imagen_album": "https://i.imgur.com/5cz5pxk.jpeg",
+                "descripcion": "2014."
+            },
+            {
+                "nombre": "Metal Resistance",
+                "imagen_album": "https://i.pinimg.com/736x/e1/c5/be/e1c5be9441c7f50b9c18c043421245ab.jpg",
+                "descripcion": "2016."
+            },
+            {
+                "nombre": "Metal Galaxy",
+                "imagen_album": "https://preview.redd.it/did-moa-get-the-tattoo-on-her-hand-in-vegas-v0-styaoodb83yc1.jpg?width=640&crop=smart&auto=webp&s=ecfba547769f9b778ad31b28e9c83f418f2b383a",
+                "descripcion": "2019."
+            },
+            {
+                "nombre": "The Other One",
+                "imagen_album": "https://pbs.twimg.com/media/F0HbQ16aEAAksS9.jpg:large",
+                "descripcion": "2023"
+            }
+        ]
+    },
+    {
+        "nombre": "Yui Mizuno",
+        "edad": "26",
+        "nacionalidad": "Japonesa",
+        "fecha_nacimiento": "1999-06-20",
+        "tiempo": "2010-2018",
+        "altura": "152 cm",
+        "imagen": "url_imagen_yui.jpg",
+        "albums": [
+            {
+                "nombre": "Babymetal",
+                "imagen_album": "https://i.imgur.com/klSA1HL.jpeg",
+                "descripcion": "2014."
+            },
+            {
+                "nombre": "Metal Resistance",
+                "imagen_album": "https://upload.wikimedia.org/wikipedia/commons/8/89/Yuimetal_Babymetal_US_Tour_2017_Megitsune_June_25_Nampa_ID.jpg",
+                "descripcion": "2016."
+            }
+        ]
+    },
+
+    {
+        "nombre": "Momoko Okazaki",
+        "edad": "24",
+        "nacionalidad": "Japonesa",
+        "fecha_nacimiento": "2000-01-14",
+        "tiempo": "2010-2018",
+        "altura": "155 cm",
+        "imagen": "url_imagen_momo.jpg",
+        "albums": [
+            {
+                "nombre": "Metal Galaxy",
+                "imagen_album": "https://i.pinimg.com/736x/89/20/26/89202619401d2674ef6e9095788b465f.jpg",
+                "descripcion": "2019."
+            },
+            {
+                "nombre": "The Other One",
+                "imagen_album": "https://pm1.aminoapps.com/7448/1198dee3d56912964be66c6cc6613d5b50172ba7r1-593-1055v2_00.jpg",
+                "descripcion": "2023"
+            }
+        ]
+    }
+]

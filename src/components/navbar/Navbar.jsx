@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [showNav, setShowNav] = useState(true);
@@ -26,11 +27,11 @@ const Navbar = () => {
         <div className='home-nav'>
             <div className='logo'>Logo</div>
             <div className='items'>
-                <a href="#">Inicio</a>
-                <a href="#">Albums</a>
-                <a href="#">Canciones</a>
-                <a href="#">Miembros</a>
-                <a href="#">Contacto</a>
+                <a ><Link to="/">Inicio</Link></a>
+                <a ><Link to="">Albums</Link></a>
+                <a ><Link to="/Canciones">Canciones</Link></a>
+                <a ><Link to="/Miembros">Miembros</Link></a>
+                <a ><Link to="">Contacto</Link></a>
             </div>
         </div>
     </nav>

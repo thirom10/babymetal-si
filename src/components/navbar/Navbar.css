@@ -1,8 +1,5 @@
 nav {
     background-color: #444;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
     position: fixed;
     top: 0;
@@ -21,6 +18,8 @@ nav {
 }
 .home-nav {
     display: flex;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
 }
 
