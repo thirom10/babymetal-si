@@ -1,0 +1,36 @@
+nav {
+    background-color: #444;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.5s ease;
+    z-index: 1000;
+}
+
+.nav-visible {
+    transform: translateY(0);
+}
+  
+.nav-hidden {
+    transform: translateY(-100%);
+}
+.home-nav {
+    display: flex;
+    align-items: center;
+}
+
+.items {
+    padding: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.items a {
+    color: #fff;
+    text-decoration: none;
+}
