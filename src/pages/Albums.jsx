@@ -1,44 +1,72 @@
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import AlbumCard from '../components/AlbumCard';
+import TrackList from '../components/TrackList';
+import './css/Albums.css'
 
-import React, { useState } from 'react';
-import YouTube from 'react-youtube';
-import './css/Canciones.css';
+const SPOTIFY_TOKEN = '2873810e296a430c89cc5fab5d5887dc';
 
-const Canciones = () => {
-    const [isLoading, setIsLoading] = useState(false);
-    const [selectedSong, setSelectedSong] = useState(null);
-    
-    const handleCardClick = (song) => {
-        setIsLoading(true);
-        setSelectedSong(song);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+export default function Albums() {
+  const [albums, setAlbums] = useState([]);
+  const [selectedAlbum, setSelectedAlbum] = useState(null);
+  const [tracks, setTracks] = useState([]);
+
+  useEffect(() => {
+    const fetchAlbums = async () => {
+      try {
+        const response = await axios.get(
+          'https://api.spotify.com/v1/artists/0X380XXQSNBYuleKzav5UO/albums',
+          {
+            headers: {
+              Authorization: `Bearer ${SPOTIFY_TOKEN}`,
+            },
+          }
+        );
+        setAlbums(response.data.items);
+      } catch (error) {
+        console.error('Error fetching albums:', error);
+      }
     };
-    
-    const handleVideoReady = () => {
-        setIsLoading(false);
-    };
-    
-    const handleCloseVideo = () => {
-        setSelectedSong(null);
-        setIsLoading(false)
-    };
-    
-    const albums = [
-        "https://open.spotify.com/embed/album/0gboAM5pPE6N4WBgCmq70t?utm_source=generator",
-        "https://open.spotify.com/embed/album/0yymWruU5luJjYZvIXGUUL?utm_source=generator",
-        "https://open.spotify.com/embed/album/6rxRhft7JZtXavzHP2g2el?utm_source=generator",
-        "https://open.spotify.com/embed/album/11CDY2YrD5iinSwCPSAvEv?utm_source=generator",
-        "https://open.spotify.com/embed/album/6Eepi724OOt38pTaUrZErI?utm_source=generator"
-    ]
+
+    fetchAlbums();
+  }, []);
+
+  const handleAlbumSelect = async (album) => {
+    setSelectedAlbum(album);
+    try {
+      const response = await axios.get(
+        `https://api.spotify.com/v1/albums/${album.id}/tracks`,
+        {
+          headers: {
+            Authorization: `Bearer ${SPOTIFY_TOKEN}`,
+          },
+        }
+      );
+      setTracks(response.data.items);
+    } catch (error) {
+      console.error('Error fetching tracks:', error);
+    }
+  };
 
   return (
-    <div className='home-container'>    
-      <div className="songs-container">
-        {albums.map((album, index) => (
-            <h1></h1>
+    <div className="container">
+      <h1 className="title">BABYMETAL Albums</h1>
+      <div className="album-grid">
+        {albums.map((album) => (
+          <AlbumCard
+            key={album.id}
+            album={album}
+            onSelect={handleAlbumSelect}
+            isSelected={selectedAlbum && selectedAlbum.id === album.id}
+          />
         ))}
       </div>
+      {selectedAlbum && (
+        <div className="tracks-section">
+          <h2 className="subtitle">{selectedAlbum.name} Tracks</h2>
+          <TrackList tracks={tracks} />
+        </div>
+      )}
     </div>
   );
-};
-
-export default Canciones;
+}

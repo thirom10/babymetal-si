@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
             <div className='items'>
                 <a ><Link to="/">Inicio</Link></a>
-                <a ><Link to="">Albums</Link></a>
+                <a ><Link to="/Albums">Albums</Link></a>
                 <a ><Link to="/Canciones">Canciones</Link></a>
                 <a ><Link to="/Miembros">Miembros</Link></a>
                 <a ><Link to="/Contacto">Contacto</Link></a>
