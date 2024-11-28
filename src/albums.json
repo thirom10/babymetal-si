@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "Babymetal",
+      "history": "El álbum debut homónimo que marcó el inicio del fenómeno Babymetal.",
+      "releaseDate": "26 de febrero de 2014",
+      "members": ["Suzuka Nakamoto (Su-metal)", "Moa Kikuchi (Moametal)", "Yui Mizuno (Yuimetal)"],
+      "spotify": "https://open.spotify.com/embed/album/0gboAM5pPE6N4WBgCmq70t?utm_source=generator"
+    },
+    {
+      "id": 2,
+      "name": "Metal Resistance",
+      "history": "El segundo álbum consolidó el éxito internacional de la banda.",
+      "releaseDate": "1 de abril de 2016",
+      "members": ["Suzuka Nakamoto (Su-metal)", "Moa Kikuchi (Moametal)", "Yui Mizuno (Yuimetal)"],
+      "spotify": "https://open.spotify.com/embed/album/0yymWruU5luJjYZvIXGUUL?utm_source=generator"
+    },
+    {
+      "id": 3,
+      "name": "Metal Galaxy",
+      "history": "Un álbum conceptual que explora diferentes estilos de metal.",
+      "releaseDate": "11 de octubre de 2019",
+      "members": ["Suzuka Nakamoto (Su-metal)", "Moa Kikuchi (Moametal)"],
+      "spotify": "https://open.spotify.com/embed/album/6rxRhft7JZtXavzHP2g2el?utm_source=generator"
+    },
+    {
+      "id": 4,
+      "name": "The Other One",
+      "history": "Un álbum que marca un nuevo capítulo en la historia de Babymetal.",
+      "releaseDate": "24 de marzo de 2023",
+      "members": ["Suzuka Nakamoto (Su-metal)", "Moa Kikuchi (Moametal)"],
+      "spotify": "https://open.spotify.com/embed/album/11CDY2YrD5iinSwCPSAvEv?utm_source=generator"
+    },
+    {
+      "id": 5,
+      "name": "Babymetal World Tour",
+      "history": "Un álbum en vivo que captura la energía de sus conciertos.",
+      "releaseDate": "18 de diciembre de 2015",
+      "members": ["Suzuka Nakamoto (Su-metal)", "Moa Kikuchi (Moametal)", "Yui Mizuno (Yuimetal)"],
+      "spotify": "https://open.spotify.com/embed/album/6Eepi724OOt38pTaUrZErI?utm_source=generator"
+    },
+    {
+      "id": 6,
+      "name": "Live at Wembley",
+      "history": "Un álbum en vivo de la actuación histórica en Wembley Arena.",
+      "releaseDate": "9 de diciembre de 2016",
+      "members": ["Suzuka Nakamoto (Su-metal)", "Moa Kikuchi (Moametal)", "Yui Mizuno (Yuimetal)"],
+      "spotify": "https://open.spotify.com/embed/album/3T4tUhGYeRNVUGevb0wThu?utm_source=generator"
+    }
+  ]
+  

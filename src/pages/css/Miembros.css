@@ -3,50 +3,67 @@
     --dark-gray: #2e2e2e;
     --red: #d63031;
     --light-gray: #f5f5f5;
+    --gray: #808080;
+    --highlight: #ff7675;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--black);
+    color: var(--light-gray);
+    margin: 0;
+    padding: 0;
 }
 
 .container-miembros {
     margin-top: 100px;
+    padding: 20px;
 }
 
 .accordion {
-    color: var(--light-gray);
     border-radius: 10px;
     overflow: hidden;
     width: 90%;
     margin: auto;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+    background: var(--dark-gray);
 }
+
 .accordion-tabs {
     display: flex;
     flex-wrap: wrap;
-    background: var(--dark-gray);
+    background: var(--black);
+    border-bottom: 2px solid var(--red);
 }
 
 .accordion-tab {
     flex: 1;
     padding: 1rem;
-    font: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
     border: none;
     cursor: pointer;
     color: var(--light-gray);
-    background: var(--dark-gray);
-    transition: background 0.3s ease;
+    background: var(--black);
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .accordion-tab:hover, .accordion-active {
     background: var(--red);
     color: var(--light-gray);
+    transform: scale(1.05);
 }
 
 .accordion-content {
     padding: 2rem;
     background: var(--dark-gray);
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .accordion-item {
     display: none;
-    background: var(--dark-gray);
 }
 
 .accordion-item.accordion-active {
@@ -56,61 +73,97 @@
 .accordion-item__label {
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    color: var(--highlight);
 }
-
 
 .accordion-item__container img {
     max-width: 100%;
     border-radius: 10px;
     margin-top: 1rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .acordion-info {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.acordion-info p {
+    font-size: 1rem;
+    color: var(--light-gray);
 }
 
 .albums {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem 0;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .album-tab {
     padding: 0.5rem 1rem;
+    font-weight: bold;
     background: var(--black);
     color: var(--light-gray);
-    border: 1px solid var(--red);
-    border-radius: 5px;
+    border: 2px solid var(--red);
+    border-radius: 20px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .album-tab.active {
     background: var(--red);
     color: var(--light-gray);
+    transform: scale(1.1);
 }
 
 .album-tab:hover {
-    background: var(--red);
+    background: var(--highlight);
 }
 
 .album-content {
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
 .album-content img {
-    max-width: 200px;
-    border-radius: 10px;
+    max-width: 250px;
+    border-radius: 15px;
     margin: 1rem auto;
     display: block;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.album-content h5 {
+    font-size: 1.25rem;
+    color: var(--red);
+    margin-bottom: 1rem;
 }
 
 .album-tabs {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .accordion-tabs {
+        flex-direction: column;
+    }
+
+    .accordion-tab {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+
+    .acordion-info {
+        flex-direction: column;
+    }
 }
