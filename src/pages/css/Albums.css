@@ -1,97 +1,48 @@
-/* General Container */
-.container {
-    font-family: Arial, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px;
-  }
-  
-  .title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 16px;
-  }
-  
-  /* Album Grid */
-  .album-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-  }
-  
-  /* Album Card */
-  .album-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
-  }
-  
-  .album-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .album-card.selected {
-    border-color: #ff5722;
-  }
-  
-  .album-image {
+.body-album {
+    position: relative;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Babymetal_waving_flags_-_Z%C3%A9nith_Paris.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container-albums {
+    z-index: 3;
+    position: relative;
+}
+
+@keyframes slideLight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
   }
   
-  .album-info {
-    padding: 8px;
+  .skeleton-loader {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    position: relative;
+    overflow: hidden;
   }
   
-  .album-name {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 4px;
-  }
-  
-  .album-release {
-    font-size: 0.875rem;
-    color: #666;
-  }
-  
-  /* Track List */
-  .tracks-section {
-    margin-top: 32px;
-  }
-  
-  .subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 16px;
-  }
-  
-  .track-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .track-item {
-    padding: 8px 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 8px;
-  }
-  
-  .track-item:hover {
-    background: #f9f9f9;
-  }
-  
-  .track-name {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  .track-duration {
-    font-size: 0.875rem;
-    color: #666;
+  .skeleton-loader:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
+    animation: slideLight 1.5s infinite linear;
   }
   
