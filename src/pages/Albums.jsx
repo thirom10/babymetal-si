@@ -133,7 +133,6 @@ export default function Albums() {
               padding: "20px",
               borderRadius: "10px",
               boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-              background: "#555",
             }}
           >
             <h2>{selectedAlbum.name}</h2>
